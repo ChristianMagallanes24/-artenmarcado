@@ -1,0 +1,86 @@
+.header{
+    display: flex;
+    justify-content: center;
+    .product-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .di-container{
+          width: 350px;
+          .di{
+            width: 100%;
+          }
+        }
+      .header-text{
+        width: 600px;
+        text-align: center;
+        .titulo{
+            font-family: 'Dancing Script', cursive;
+            font-size: 60px;
+            color: #000000;
+        }
+        .header-p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            color: #000000;
+        }
+      }
+      .header-btn{
+        color: #000000;
+        background: none;
+        border: hidden;
+        cursor: pointer;
+        font-size: 80px;
+        animation: movimientoLeve .8s infinite alternate;
+      }
+    }
+}
+
+@keyframes movimientoLeve {
+    from {
+        transform: translateY(-3px);
+    }
+    to {
+        transform: translateY(3px);
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1138px) {
+  .header{
+    justify-content: center;
+    .product-header{
+        margin-left: 0;
+        .header-text{
+            width: auto;
+            .header-p{
+                font-size: 23px;
+            }
+        }
+       }
+  }
+}
+
+
+@media (max-width: 756px) {
+    .header{
+      justify-content: center;
+      .product-header{
+        flex-wrap: wrap;
+          margin-left: 0;
+          .header-text{
+              width: auto;
+              .header-p{
+                  font-size: 23px;
+              }
+          }
+         }
+    }
+  }
